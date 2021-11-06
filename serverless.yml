@@ -1,0 +1,12 @@
+app: simple-cloudbase
+name: simple-cloudbase-website
+component: website
+stage: dev
+inputs:
+  src:
+    src: ./docs/.vuepress/dist
+    index: index.html
+    error: index.html
+  region: ap-shanghai
+  bucket: simple-cloudbase
+  replace: true

@@ -1,6 +1,6 @@
 import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
-import { sidebar } from './configs'
+import { sidebar, navbar } from './configs'
 
 export default defineUserConfig<DefaultThemeOptions>({
   lang: 'zh-CN',
@@ -13,6 +13,8 @@ export default defineUserConfig<DefaultThemeOptions>({
 
     locales: {
       '/': {
+        navbar: navbar.zh,
+        
         selectLanguageName: '简体中文',
 
         selectLanguageText: '选择语言',
@@ -20,6 +22,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 
         // sidebar
         sidebar: sidebar.zh,
+        
 
         // page meta
         editLinkText: '在 GitHub 上编辑此页',

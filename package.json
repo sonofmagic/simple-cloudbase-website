@@ -7,7 +7,8 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "components deploy"
+    "deploy": "components deploy && npm run refresh:cdn",
+    "refresh:cdn": "node ./scripts/refresh-cdn-urls.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "eslint": "^8.2.0",
     "eslint-config-vuepress": "^3.4.0",
     "eslint-config-vuepress-typescript": "^2.4.0",
+    "tencentcloud-sdk-nodejs": "^4.0.230",
     "vuepress": "^2.0.0-beta.27"
   }
 }

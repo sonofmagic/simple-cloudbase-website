@@ -24,8 +24,6 @@ cd simple-cloudbase-starter
 ```bash
 git init
 yarn init
-# src 默认为所有云函数源码的文件夹
-mkdir src
 ```
 
   </CodeGroupItem>
@@ -84,6 +82,8 @@ echo 'dist' >> .gitignore
 - **步骤6**: 创建你的第一个云函数
 
 ```bash
+# src 默认为所有云函数源码的文件夹
+mkdir src
 cd src
 mkdir getOpenId
 # then write some codes into getOpenId/index.ts
@@ -95,7 +95,7 @@ mkdir getOpenId
   <CodeGroupItem title="YARN" active>
 
 ```bash
-yarn build # 打包源码
+yarn build # 压缩打包源码
 yarn gen # 生成 cloudbase 部署文件
 ```
 
@@ -104,25 +104,27 @@ yarn gen # 生成 cloudbase 部署文件
   <CodeGroupItem title="NPM">
 
 ```bash
-npm run build # 打包源码
+npm run build # 压缩打包源码
 npm run gen # 生成 cloudbase 部署文件
-
 ```
 
   </CodeGroupItem>
 </CodeGroup>
 
 
-- **步骤8**: 部署
+- **步骤8**: 部署(微信小程序)
 
+在.env.dev .env.prod 声明云开发环境ID后
 
 <CodeGroup>
   <CodeGroupItem title="YARN" active>
 
 ```bash
 yarn global add @cloudbase/cli
+# 微信授权
 tcb login 
-tcb fn deploy
+# dev云环境部署
+tcb fn deploy -mode dev
 ```
 
   </CodeGroupItem>
@@ -131,8 +133,10 @@ tcb fn deploy
 
 ```bash
 npm i -g @cloudbase/cli
+# 微信授权
 tcb login 
-tcb fn deploy
+# dev云环境部署
+tcb fn deploy -mode dev
 ```
 
   </CodeGroupItem>

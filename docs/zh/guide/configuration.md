@@ -40,4 +40,6 @@ interface ISimpleConfig {
 
 这样在打包时，既可以使用 alias，也可以顺便添加 `vscode` 智能提示，也是一举两得。
 
-## [Cloudbase cli 相关文档](https://docs.cloudbase.net/cli-v1/config)
+## Cloudbase配置
+
+[Cloudbase cli 相关文档](https://docs.cloudbase.net/cli-v1/config)

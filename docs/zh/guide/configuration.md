@@ -8,6 +8,12 @@
 .env.[mode]         # 只在指定的模式中被载入
 ```
 
+### env id 不知道去哪拿？
+
+![get-env-id](/get-env-id.png)
+
+打开微信IDE, 右侧 `设置` 菜单，可复制环境ID
+
 ## 配置文件
 
 每个函数的`src`源码文件夹下，都可以放入一个 `simple.json`

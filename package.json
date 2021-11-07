@@ -7,7 +7,7 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "components deploy && npm run refresh:cdn",
+    "deploy": "yarn build && components deploy && yarn refresh:cdn",
     "refresh:cdn": "node ./scripts/refresh-cdn-urls.js"
   },
   "keywords": [],

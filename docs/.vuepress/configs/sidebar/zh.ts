@@ -13,5 +13,14 @@ export const zh: SidebarConfig = {
         // '/zh/guide/cloudbase-auth.md'
       ]
     }
+  ],
+  '/zh/pro/': [
+    {
+      text: '进阶',
+      children: [
+        '/zh/pro/README.md',
+        '/zh/pro/single-or-mutiple.md'
+      ]
+    }
   ]
 }

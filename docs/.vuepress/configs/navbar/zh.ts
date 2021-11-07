@@ -4,5 +4,9 @@ export const zh: NavbarConfig = [
   {
     text: '指南',
     link: '/zh/guide/'
+  },
+  {
+    text: '进阶',
+    link: '/zh/pro/'
   }
 ]

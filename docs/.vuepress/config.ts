@@ -6,7 +6,43 @@ export default defineUserConfig<DefaultThemeOptions>({
   lang: 'zh-CN',
   title: 'SimpleCloudbase',
   description: '让小程序开发者们露出笑容',
-  head: [['link', { rel: 'icon', href: '/logo.png' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/logo.png' }],
+    [
+      'script',
+      {},
+      `
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?4e2d32b1c64dc8c7d691822e882c87ad";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    
+    `
+    ],
+    ['meta', { name: 'application-name', content: 'SimpleCloudbase' }],
+    [
+      'meta',
+      { name: 'apple-mobile-web-app-title', content: 'SimpleCloudbase' }
+    ],
+    [
+      'meta',
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }
+    ],
+    ['link', { rel: 'apple-touch-icon', href: `/logo.png` }],
+    [
+      'link',
+      {
+        rel: 'mask-icon',
+        href: `/logo.png`,
+        color: '#3eaf7c'
+      }
+    ],
+    ['meta', { name: 'msapplication-TileColor', content: '#3eaf7c' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }]
+  ],
   themeConfig: {
     logo: './full-logo.png',
     repo: 'sonofmagic/simple-cloudbase-website',
@@ -14,7 +50,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     locales: {
       '/': {
         navbar: navbar.zh,
-        
+
         selectLanguageName: '简体中文',
 
         selectLanguageText: '选择语言',
@@ -22,7 +58,6 @@ export default defineUserConfig<DefaultThemeOptions>({
 
         // sidebar
         sidebar: sidebar.zh,
-        
 
         // page meta
         editLinkText: '在 GitHub 上编辑此页',
@@ -56,5 +91,23 @@ export default defineUserConfig<DefaultThemeOptions>({
       title: 'SimpleCloudbase',
       description: '让小程序开发者们露出笑容'
     }
-  }
+  },
+  plugins: [
+    [
+      '@vuepress/plugin-search',
+      {
+        locales: {
+          '/': {
+            placeholder: '搜索'
+          }
+        }
+      }
+    ]
+    // [
+    //   'vuepress-plugin-baidu-analytics',
+    //   {
+    //     id: '4e2d32b1c64dc8c7d691822e882c87ad'
+    //   }
+    // ]
+  ]
 })

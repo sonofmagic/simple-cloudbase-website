@@ -22,7 +22,7 @@ features:
 footer: MIT Licensed | Copyright © 2021-present ice breaker
 ---
 
-### Hello SimpleCloudbase
+### Quickly Start
 
 <CodeGroup>
   <CodeGroupItem title="YARN" active>

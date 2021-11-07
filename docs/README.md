@@ -13,7 +13,7 @@ actions:
     type: secondary
 features:
   - title: 现代化的Nodejs
-    details: 模块之间的复用，js(commonjs,esm),ts 支持与 alias,公共npm包,代码压缩支持
+    details: 模块之间的复用，js(commonjs,esm),ts 与 alias,公共npm包,代码压缩支持
   - title: 低廉的迁移成本
     details: 旧有的云开发项目能够几乎 0 成本的迁移进来
   - title: 简单至上

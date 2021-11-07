@@ -19,7 +19,8 @@ export const zh: SidebarConfig = {
       text: '进阶',
       children: [
         '/zh/pro/README.md',
-        '/zh/pro/single-or-mutiple.md'
+        '/zh/pro/single-or-mutiple.md',
+        '/zh/pro/why-wechat.md'
       ]
     }
   ]

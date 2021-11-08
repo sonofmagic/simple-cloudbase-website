@@ -45,7 +45,7 @@ npm init
   <CodeGroupItem title="YARN" active>
 
 ```bash
-yarn add -D simple-cloudbase@next
+yarn add -D simple-cloudbase
 ```
 
   </CodeGroupItem>
@@ -53,7 +53,7 @@ yarn add -D simple-cloudbase@next
   <CodeGroupItem title="NPM">
 
 ```bash
-npm install -D simple-cloudbase@next
+npm install -D simple-cloudbase
 ```
 
   </CodeGroupItem>

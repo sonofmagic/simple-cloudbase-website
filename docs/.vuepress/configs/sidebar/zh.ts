@@ -9,7 +9,9 @@ export const zh: SidebarConfig = {
         '/zh/guide/getting-started.md',
         '/zh/guide/deploy.md',
         '/zh/guide/migration.md',
-        '/zh/guide/configuration.md'
+        '/zh/guide/configuration.md',
+        '/zh/guide/cloudbase-cli.md',
+        '/zh/guide/demo.md'
         // '/zh/guide/cloudbase-auth.md'
       ]
     }

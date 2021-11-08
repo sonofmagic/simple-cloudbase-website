@@ -8,7 +8,7 @@
 .env.[mode]         # 只在指定的模式中被载入
 ```
 
-### env id 不知道去哪拿？
+### env id 不知道去哪复制？
 
 ![get-env-id](/get-env-id.png)
 

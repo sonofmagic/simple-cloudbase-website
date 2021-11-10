@@ -8,6 +8,7 @@ export const zh: SidebarConfig = {
         '/zh/guide/README.md',
         '/zh/guide/getting-started.md',
         '/zh/guide/deploy.md',
+        '/zh/guide/structure.md',
         '/zh/guide/migration.md',
         '/zh/guide/configuration.md',
         '/zh/guide/cloudbase-cli.md',

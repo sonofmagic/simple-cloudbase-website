@@ -124,7 +124,7 @@ yarn global add @cloudbase/cli
 # 微信授权
 tcb login 
 # dev云环境部署
-tcb fn deploy -mode dev
+tcb fn deploy --mode dev
 ```
 
   </CodeGroupItem>
@@ -136,7 +136,7 @@ npm i -g @cloudbase/cli
 # 微信授权
 tcb login 
 # dev云环境部署
-tcb fn deploy -mode dev
+tcb fn deploy --mode dev
 ```
 
   </CodeGroupItem>

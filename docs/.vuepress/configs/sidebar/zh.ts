@@ -26,5 +26,11 @@ export const zh: SidebarConfig = {
         '/zh/pro/why-wechat.md'
       ]
     }
+  ],
+  '/zh/router/': [
+    {
+      text: 'simple-cloudbase-router',
+      children: ['/zh/router/README.md', '/zh/router/idea.md']
+    }
   ]
 }

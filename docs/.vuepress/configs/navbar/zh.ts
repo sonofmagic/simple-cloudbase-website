@@ -1,4 +1,4 @@
-import type { NavbarConfig, SidebarConfig } from '@vuepress/theme-default'
+import type { NavbarConfig } from '@vuepress/theme-default'
 
 export const zh: NavbarConfig = [
   {
@@ -8,5 +8,9 @@ export const zh: NavbarConfig = [
   {
     text: '进阶',
     link: '/zh/pro/'
+  },
+  {
+    text: 'Router',
+    link: '/zh/router/'
   }
 ]

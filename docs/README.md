@@ -28,11 +28,8 @@ footer: MIT Licensed | Copyright © 2021-present ice breaker
   <CodeGroupItem title="YARN" active>
 
 ```bash
-# 在你的项目中安装
-yarn global add simple-cloudbase
-# 这里会注册 stcb 指令 ,因为 cloudbase 的 alias 是 tcb,所以 stcb(simple-cloudbase)
 # 初始化项目
-stcb init my-simple-cloudbase-starter
+npx simple-cloudbase init my-simple-cloudbase-starter
 cd my-simple-cloudbase-starter
 # 安装包
 yarn
@@ -56,11 +53,8 @@ tcb fn deploy
   <CodeGroupItem title="NPM">
 
 ```bash
-# 在你的项目中安装
-npm i -g simple-cloudbase
-# 这里会注册 stcb 指令 ,因为 cloudbase 的 alias 是 tcb,所以 stcb(simple-cloudbase)
 # 初始化项目
-stcb init my-simple-cloudbase-starter
+npx simple-cloudbase init my-simple-cloudbase-starter
 cd my-simple-cloudbase-starter
 # 安装包
 npm i

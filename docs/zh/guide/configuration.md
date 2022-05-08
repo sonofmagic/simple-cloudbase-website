@@ -23,7 +23,7 @@ interface ISimpleConfig {
   // 打包时是否忽略此函数，通常一些外置的公共包需要设置为 true,比如函数A和B依赖 lib C, 但是C不是一个函数，也在 src，目录下
   ignore?: boolean
   //当前函数打包时跳过的 npm 包
-  externals?: string[]
+  external?: string[]
 }
 ```
 
